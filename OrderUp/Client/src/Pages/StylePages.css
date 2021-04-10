@@ -1,0 +1,402 @@
+/* basic button with hover arrow */
+
+.button {
+  border-radius: 5px;
+  background-color: #1f618d;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 5px;
+  width: 100px;
+  cursor: pointer;
+  margin: 5px;
+  font-family: Helvetica;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:active {
+  transform: scale(0.96);
+  transition: 0.2s;
+}
+
+/* small basic button */
+
+.small-button {
+  border-radius: 5px;
+  background-color: #1f618d;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-size: 12px;
+}
+
+.small-button:enabled:active {
+  transform: scale(0.96);
+  transition: 0.2s;
+}
+
+.small-button:disabled {
+  background-color: #dadada;
+  cursor: default;
+}
+
+/* plus button */
+
+.plus-button {
+  background-image: url(../images/green_plus.png);
+  border-radius: 100%;
+  background-color: transparent;
+  border: transparent;
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}
+
+.plus-button:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: 0.2s;
+}
+
+.plus-button:active {
+  transform: scale(0.96);
+  transition: 0.2s;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* minus button */
+
+.minus-button {
+  background-image: url(../images/grey_minus.png);
+  border-radius: 100%;
+  background-color: transparent;
+  border: transparent;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.minus-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.minus-button:active {
+  transform: scale(0.96);
+  transition: 0.2s;
+}
+
+/* basic container for entire pages */
+
+.page-container {
+  margin: -8px;
+}
+
+/* basic container for non-header page content */
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* basic flex container column (scrollable) */
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollable-flex-column {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  max-height: 100vh;
+}
+
+/* basic flex container row */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* fixed container header title */
+
+.container-header {
+  font-family: Helvetica;
+  color: white;
+  margin: -1px -1px 0px -1px;
+  font-size: 16px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #303030;
+  text-align: center;
+  padding: 15px;
+}
+
+/* list header */
+
+.list-header {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  height: 20px;
+}
+
+/* list item */
+
+.list-item {
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+}
+
+/* grouped list header */
+
+.group-header {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+/* form input fields */
+
+.form-input {
+  padding: 7px;
+  border-radius: 5px;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1.5px;
+  width: 80%;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+.form-input-error {
+  padding: 7px;
+  border-radius: 5px;
+  border-color: red;
+  border-style: solid;
+  border-width: 1.5px;
+  width: 80%;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+.form-input-error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.form-input-error-container .input {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: red;
+  border-style: solid;
+  border-width: 1.5px;
+  font-family: Helvetica;
+  font-size: 14px;
+  width: 100%;
+}
+
+.form-input-error-container .text {
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 12px;
+  color: red;
+}
+
+/* container to hold a single order */
+
+.order-container {
+  padding: 10px;
+  border: 1.5px;
+  border-color: #f3f3f3;
+  background-color: #f3f3f3;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+/* container to hold grids */
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #f3f3f3;
+}
+
+/* item within grid */
+
+.grid-item {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+/* basic table and table heading/content */
+
+table {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #f3f3f3;
+}
+
+td {
+  font-family: Helvetica;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+}
+
+th {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+/* remove arrows from number input fields */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* basic dropdown */
+
+.Dropdown-root {
+  position: relative;
+  font-family: Helvetica;
+  font-size: 14px;
+  width: 74%;
+}
+
+.Dropdown-control {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: lightgrey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #333;
+  padding: 8px;
+}
+
+.Dropdown-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+
+.is-open .Dropdown-arrow {
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px;
+}
+
+.Dropdown-menu {
+  background-color: white;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: lightgrey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Dropdown-menu .Dropdown-group > .Dropdown-title {
+  padding: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.Dropdown-option {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+}
+
+.Dropdown-option:last-child {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.Dropdown-option:hover {
+  background-color: #f2f9fc;
+  color: #333;
+}
+
+.Dropdown-option.is-selected {
+  background-color: #f2f9fc;
+  color: #333;
+}
+
+.Dropdown-noresults {
+  box-sizing: border-box;
+  color: #ccc;
+  cursor: default;
+  display: block;
+  padding: 10px;
+}
