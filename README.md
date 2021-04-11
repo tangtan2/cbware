@@ -14,7 +14,7 @@ cbware is a real-time ordering app that allows users to place orders that will t
 3. Install Windows Server 2012+ on virtual machine
 4. Install Microsoft SQL Server and run database scripts
 5. Publish dotnet application
-    1. Create basic appsettings.json file
+    1. Create basic appsettings.json file (if it does not already exist)
     2. Add database connection string to appsettings.json
     3. Change REACT_APP_API_URL parameter in .env file to be the static IP address of the virtual machine
     4. Install [ASP.NET](http://asp.NET) Core 5.0 SDK if not already installed and run "dotnet publish -c Release"
