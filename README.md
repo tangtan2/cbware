@@ -1,6 +1,8 @@
 # cbware
 ### Real-time ordering app
 
+*This application was not built for commercial use. Download at your own risk.*
+
 cbware is a real-time ordering app that allows users to place orders that will then appear on any warehouse personnel's screens. When an order is completed by the warehouse, users will see that order disappear off their screen as well. 
 
 ---
