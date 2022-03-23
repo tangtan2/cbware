@@ -54,3 +54,7 @@ cbware is a real-time ordering app that allows users to place orders that will t
 ### Version history
 
 2021-04-10: Beta version b1.00
+
+---
+
+Authored by DrewMcMillen and tangtan2.
